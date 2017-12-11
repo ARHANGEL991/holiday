@@ -1,0 +1,11 @@
+.imagePart {
+    color: #292927;
+    border-style: solid;
+    border-width: 0.08em;
+    margin: -4px -1px;
+}
+
+#gameTable table {
+    font-size: 20px;
+    margin: 5px auto;
+}

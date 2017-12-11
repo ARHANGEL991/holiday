@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+  <link href="css/sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/gametable.css">
+  <link rel="stylesheet" href="css/checkbox.css">
+  <link rel="stylesheet" href="css/beltext.css">
+
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#"> <i class="fa fa-bars" aria-hidden="true"></i>
+                        Меню
+                    </a>
+        </li>
+        <li>
+          <a id="change"> <i class="fa fa-clone" aria-hidden="true"></i> Змяніць малюнак</a>
+        </li>
+        <li>
+          <a id="randomize"><i class="fa fa-random" aria-hidden="true"></i> Змяшаць</a>
+        </li>
+        <li>
+          <a id="win"><i class="fa fa-picture-o" aria-hidden="true"></i> Сабраць</a>
+        </li>
+        <li>
+
+          <div class="control-group" id="displayHelp1">
+
+            <label class="control control-checkbox">
+
+         Дапамога
+             <input type="checkbox"  id="displayHelp"  />
+         <div class="control_indicator"></div>
+
+         </div>
+              </li>
+              <li>
+                <a href="../mainPage/index.html"><i class="fa fa-reply" aria-hidden="true"></i> На галоўную</a>
+              </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+
+        <div id="page-content-wrapper">
+
+            <div class="container-fluid">
+
+  <!-- NavBAr -->
+              <div class="container">
+
+
+              <nav class="navbar  navbar-light bg-light">
+
+                <div class="navbar-brand" href="#">
+
+                  <a href="#menu-toggle" class="btn btn-primary btn-main" id="menu-toggle" onclick="myFunction(this)">
+                      <div class="bar1"></div>
+                      <div class="bar2"></div>
+                      <div class="bar3"></div>
+
+                  </a>
+
+                  </div>
+                </a>
+<div class="text">
+<div class="text0">Багач</div>
+<div class="text1">Спасаўскія святкі</div>
+<div class="text2">Дажынкі</div>
+<div class="text3">Купалле</div>
+<div class="text4">Масленіца</div>
+<div class="text5">Пасха</div>
+</div>
+<style>
+
+</style>
+
+              </nav>
+                </div>
+  <!-- NavBAr -->
+
+
+                <!-- Page Content -->
+
+                <div id="imagepicker">
+                  <div class="container">
+                    <div class="row">
+
+
+                      <div id="previews" class="offset-md-1"></div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div id="gameTable">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col"></div>
+                        <div id="puzzle"></div>
+                        <div class="col"></div>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                <div id="answerdiv">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col"></div>
+                      <div class="answer winAnswer"></div>
+                      <div class="col"></div>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div id="beltext">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md">
+                      <ul class="text0 push" style="display: none;">
+
+                          <li>	Адзначаецца 14 (21) верасня.</li>
+                          <li>	У гэты дзень нашы продкі падводзілі вынікі сваёй летняй дзейнасці, ацэньвалі сабраны ўраджай i дзякавалі Багам i Духам за дапамогу. На працягу ўсяго ўборачнага перыяду чалавек неаднаразова праводзіў шматлікія рытуалы падзякі і ахвяраванні Духам поля, ўраджаю і іншым ніжэйшым боствам. Цяпер жа надыходзіць самы спрыяльны час аддзячыць і прынесці ахвяры вярхоўнаму, найгалоўнейшаму Богу славян-земляробаў – Сонцу, або Даждбог.</li>
+                          <li>	Сноп урачыста прыносілі ў хату, абмалочвалі, зерне ссыпалі ў лубку. Затым устаўлялі свечку i запальвалі яе. Такім чынам рабіўся багач, які заносілі ў кожны двор, тым самым жадаючы багацця. Багач, згодна з павер'ем, забяспечваў ніву жытам i пpынociў у хату дастатак i шчасце.</li>
+
+                        </ul>
+
+                        <ul class="text1 push ">
+                          <li>	14 жніўня — першы, або Мядовы Спас, Макавей,<br> 19 жніўня — Другі Спас, які называецца яшчэ Вялікім, Сярэднім, Яблычным,<br> 29 жніўня — Трэці, ці Малы, Хлебны, Арэхавы.
+                          </li>
+                          <li>	У язычніцкай рэлігіі Спас — гэта бажаство, якое ўвасобіла ў сабе Дух ураджаю, а магчыма, нават узначальвала цэлы пантэон Духаў поля, лесу, лугу і г. д.  У сённяшняй культурнай спадчыне беларусаў Спасаўскія святкі ўяўляюць сабой аднадзённыя маленні ў царкве.</li>
+                          <li>	На першы Спас раней асвячалі мак, жанчыны пякуць з новага хлеба варэнікі, пірагі. Асвечаны мак захоўвалі як і святую ваду. Другі Спас — гэта асноўнае і галоўнае свята ў беларусаў. У гэты дзень забаранялася працаваць. Асвячалі у царкве яблыкі, ігрушы, мёд. Пяклі пірагі з яблыкамі, смажылі яблыкі ў печы. Трэці Спас характарызаваўся заканчэннем асноўных уборачных работ. З гэтага часу збіралі ў лесе грыбы, арэхі, ягады. На полі ўбіралі бульбу, капусту, гарбузы.</li>
+
+                        </ul>
+
+                        <ul class="text2 push ">
+                          <li>	Адзначаецца 15 (28) жніўня.</li>
+                          <li>	Старажытнае народнае свята, якое прысвячалася сканчэнню жніва. Людзі на нейкі час рабіліся вольнымі ад цяжкай працы, атрымлівалі адпачынак і, найперш, ураджай.</li>
+                          <li>	У многіх вёсках пасля збору ўраджаю было прынята пакідаць на полі некалькі нязжатых каласкоў. Іх абвязвалі поясам. Гэта звалося «завіць бараду». Побач з імі клалі хлеб з соллю, яйкі. Апошнія каласкі зваліся ў розных мясцінах Дзедава Барада, Богава Барада. Або казалі, што пакідаюць каласкі «казе на бараду». Верагодна, тут маюцца на ўвазе персанажы Дзеда і Казы, у якіх на Каляды апраналіся калядоўшчыкі. Верагодна, Дзед ці Каза — рэшткі вераванняў у  язычніцкіх духай ці багоў, чые сапраўдныя імёны, верагодна, сёння ўжо забытыя, але якія ўвасаблялі зямную плоднасць і ўраджай.</li>
+
+                        </ul>
+
+                        <ul class="text3 push ">
+                          <li>	Адзначаецца ў ноч на 7 ліпеня.</li>
+                          <li>	Старажытнае народнае земляробчае свята, звязанае з летнім сонцастаяннем, з росквітам прыроды і летняй цеплынёй.</li>
+                          <li>	Людзi па ўсіх дварах збіралі старыя непатрэбныя рэчы і вывозілі іх на выбранае для ўрачыстасці месца. З гэтых рэчаў рабілі высокае кастрышча. У некаторых мясцінах у полымя кідалі старыя вуллі, каб пчолы былі здаровыя і прыносілі мёд. У старажытнасці купальскі агонь распальвалі трэннем кавалкаў дрэва адзін аб адзін, адначасова ўздымалі на высокім шасце прамасленае драўлянае кола якое потым падпальвалі. На агні гатавалі абрадавую вячэру: яешню, верашчаку, кулагу, варэнікі. Вакол агню вадзілі карагоды, спявалі купальскія песні. Праз вогнішча хлопцы і дзяўчаты скакалі парамі, што было звязана з ачышчальнай магіяй і з рытуалам, прызначаным забяспечыць плоднасць. У агонь таксама кідалі пучок лёну і крычалі магічныя словы: «Зарадзі лён». Важнымі элементамі свята былі спальванне або тапленне ў вадзе пудзіла Купалы, рытуальнае купанне на ўзыходзе сонца, качанне па расе, пусканне з гары падпаленага кола і інш.</li>
+
+                        </ul>
+
+                        <ul class="text4 push ">
+                          <li>	Прыпадае на 8-ы тыдзень да Вялікадня.</li>
+                          <li>	Старажытнае свята, якое ўзнікла ў нашых продкаў задоўга да хрысціянства і сімвалізавала сабою культ прыроды, адраджэнне плодных сіл зямлі. Лічыцца, што першапачаткова свята звязвалася з днём вясновага сонцазвароту, але з прыняццем хрысціянства яно стала папярэднічаць Вялікаму посту.</li>
+                          <li>	Назва паходзіць ад таго, што ў канцы лютага — пачатку сакавіка каровы паспявалі ўжо ацяліцца. Тады сялянскія гаспадаркі ставаліся багатымі на малако і рабілі прадукты з яго галоўнымі на стале. Абрадавымі стравамі тыдня былі масла, тварог і сыр. Таксама штодзень частаваліся блінамі без мяса, таму паводле хрысціянскага звычаю тыдзень называўся мясапусным — пустым ад мяса.</li>
+
+                        </ul>
+
+
+                        <ul class="text5 push ">
+                          <li>	Гэтае свята не мае  пастаяннай прымеркаванасці ў народным календары: у залежнасці ад месячнага календара яно прыпадае на час ад 4 красавіка да 8 мая.</li>
+                          <li>	Галоўная падзея царкоўнага календара, найстаражытнае і найважнейшае хрысціянскае свята, якое адзначалася яшчэ ў часы апосталаў, і было ўсталявана ў гонар Уваскрэсення Ісуса Хрыста — цэнтра ўсёй біблейскай гісторыі і асновы ўсяго хрысціянскага вучэння.</li>
+                          <li>	Падрыхтаваўшы сябе духоўна Вялікім сямітыднёвым постам, на перадвелікодным Белым тыдні пачынаюць рыхтавацца да правядзення святочных дзён. У Чысты чацвер чысцяць і прыбіраюць хату і двор. У Вялікую суботу, напярэдадні Вялікадня, гатуецца, варыцца, смажыцца мноства розных страваў. Пякуцца пірагі, фарбуюцца ў розныя колеры і распісваюцца ўзорамі курыныя яйкі (пісанкі). Увечары гэтага ж дня прыбіраюцца ў святочную вопратку, бяруць з сабой падрыхтаваную для асвячэння «пасху», ідуць у царкву на ўсяночную службу. Пасля літургіі святкаванне працягваецца дома. Разгаўляюцца асвячоным яйкам, потым іншай асвячонай ежай. Любімая гульня ў моладзі — біткі. Стукаюцца велікоднымі яйкамі, і пераможцам аказваецца той, у каго яно застаецца цэлае («мацак»).</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- /#page-content-wrapper -->
+              </>
+            </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+
+
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/4x4.js"></script>
+<script type="text/javascript">
+$("#menu-toggle").click(function(e) {
+     e.preventDefault();
+     $("#wrapper").toggleClass("toggled");
+ });
+
+</script>
+<script>
+function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+/* set variables locally for increased performance */
+var scroll_timer;
+var displayed = false;
+var $message = $('#message a');
+var $window = $(window);
+var top = $(document.body).children(0).position().top;
+/* react to scroll event on window */
+$window.scroll(function () {
+window.clearTimeout(scroll_timer);
+scroll_timer = window.setTimeout(function () {
+if ($window.scrollTop() <= top) {
+displayed = false;
+$message.fadeOut(500);
+}
+else if (displayed == false) {
+displayed = true;
+$message.stop(true, true).show().click(function () { $message.fadeOut(500); });
+}
+}, 100);
+});
+});
+</script>
+<style>
+#message a:after{
+width: 10px;
+height:10px;
+content:'';
+border-top: 2px solid #ccc;
+border-left: 2px solid #ccc;
+transform: rotate(45deg);
+position:absolute;
+top:4px;
+bottom:0;
+left:0;
+right:0;
+margin:auto;
+}
+
+#message a {
+display: block;
+display: none;
+z-index: 999;
+opacity: .8;
+position: fixed;
+bottom: 50px;
+right:100px;
+margin-top: -80px;
+margin-left: -160px;
+border-radius:50%;
+line-height: 48px;
+width: 50px;
+height:50px;
+padding: 10px;
+background-color: #700CBC;
+font-size: 24px;
+text-align: center;
+color: #fff;
+}
+
+element.style {
+display: inline;
+}
+</style>
+<div id="message"><a href="#top"></a></div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery-3.1.0.min.js"></script>
+
+</body>
+</html>

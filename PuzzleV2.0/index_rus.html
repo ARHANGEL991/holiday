@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+  <link href="css/sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/gametable.css">
+  <link rel="stylesheet" href="css/checkbox.css">
+  <link rel="stylesheet" href="css/beltext.css">
+
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#">
+                        Меню
+                    </a>
+        </li>
+        <li>
+
+          <a id="change">  <i class="fa fa-clone" aria-hidden="true"></i> Сменить рисунок</a>
+        </li>
+        <li>
+
+          <a id="randomize">  <i class="fa fa-random" aria-hidden="true"></i> Перемешть</a>
+        </li>
+        <li>
+
+          <a id="win"> <i class="fa fa-picture-o" aria-hidden="true"></i> Собрать</a>
+        </li>
+        <li>
+
+          <div class="control-group" id="displayHelp1">
+            <label class="control control-checkbox">
+         Помощь
+             <input type="checkbox"  id="displayHelp"  />
+         <div class="control_indicator"></div>
+
+         </div>
+              </li>
+              <li>
+                <a href="../mainPage/index.html"><i class="fa fa-reply" aria-hidden="true"></i> На главную</a>
+              </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+
+        <div id="page-content-wrapper">
+
+            <div class="container-fluid">
+
+  <!-- NavBAr -->
+              <div class="container">
+
+
+              <nav class="navbar  navbar-light bg-light">
+                <div class="navbar-brand" href="#">
+
+                  <a href="#menu-toggle" class="btn btn-primary btn-main" id="menu-toggle" onclick="myFunction(this)">
+                      <div class="bar1"></div>
+                      <div class="bar2"></div>
+                      <div class="bar3"></div>
+
+                  </a>
+                  </div>
+                </a>
+                <div class="text">
+				<div class="text0">Новый год</div>
+				<div class="text1">Рождество Христово</div>
+				<div class="text2">Вербница</div>
+				<div class="text3">Радоница</div>
+				<div class="text4">Коляда</div>
+				<div class="text5">Троица</div>
+        </div>
+              </nav>
+                </div>
+  <!-- NavBAr -->
+
+
+                <!-- Page Content -->
+
+                <div id="imagepicker">
+                  <div class="container">
+                    <div class="row">
+
+
+                      <div id="previews" class="offset-md-1"></div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div id="gameTable">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col"></div>
+                        <div id="puzzle"></div>
+                        <div class="col"></div>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                <div id="answerdiv">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col"></div>
+                      <div class="answer winAnswer"></div>
+                      <div class="col"></div>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div id="beltext">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md">
+                      <ul class="text0 push" style="display: none;">
+                          <li>	Отмечается в ночь с 31 декабря на 1 января.</li>
+                          <li>	Праздник, наступающий в момент перехода с последнего дня года в первый день следующего года. Отмечается многими народами в соответствии с принятым календарём. Начало года с 1 января было установлено римским правителем Юлием Цезарем в 46 году до нашей эры. В Древнем Риме этот день был посвящён Янусу — богу выбора, дверей и всех начал. Месяц январь получил своё название в честь бога Януса, которого изображали с двумя лицами: одно смотрело вперёд, а другое — назад.</li>
+                          <li>	Согласно традиции в доме устанавливается новогодняя ёлка. Ёлку наряжают и украшают разнообразными игрушками. При встрече Нового года близкие собираются за столом. Готовят разные блюда: оливье, селёдку под шубой, окорочка, голубцы, пельмени и многое другое. Собравшиеся сначала «провожают» старый год — вспоминают, чем он запомнился или что в нём было. В 0 часов 0 минут 00 секунд 1 января бьют куранты. С началом перезвона курантов (перезвон длится 20 секунд, потом начинают бить куранты), знаменующим приход нового года, принято загадывать желание. Также в Новый Год принято дарить подарки.</li>
+
+                        </ul>
+
+                        <ul class="text1 push ">
+                          <li>	Отмечается 7 января по новому стилю и 25 декабря по юлианскому календарю.
+                          </li>
+                          <li>	В православии входит в число господских двунадесятых праздников и предваряется 40-дневным Рождественским постом.</li>
+                          <li>	В праздник Рождества Христова православные приветствуют друг друга словами: «Христос родился!», отвечая на них — «Славим Его!». Среди нехристиан во многих культурах Рождество связывается прежде всего с ёлкой, дарением подарков и загадыванием желаний. Обычай дарить на Рождество подарки всячески поощряется продавцами, что привело к коммерциализации Рождества.</li>
+
+                        </ul>
+
+                        <ul class="text2 push ">
+                          <li>	Отмечается в субботу и воскресенье за неделю до Пасхи.</li>
+                          <li>	Считается, что в этот день Господь Иисус Христос вошел на ослице в Иерусалим, встречаемый радостно людьми с ветками пальмы в руках. Православный обычай в Болгарии выбрал для этого праздника ветки только что распустившейся вербы.</li>
+                          <li>	Вербница стала своего рода детским праздником с обязательным посещением вербного базара. В Москве такой базар устраивался на Красной площади. Здесь детям покупали красочно оформленные ветки вербы, яркие бумажные цветы, красные шары, искусные игрушки, свистульки и дудки, сладости. Из старинных традиций и сейчас еще сохраняется обычай рано утром в Вербное воскресенье слегка стегать детей для здоровья освященной веткой вербы.</li>
+
+                        </ul>
+
+                        <ul class="text3 push ">
+                          <li>	Отмечается во вторник второй недели после Пасхи, через день после Фоминого воскресенья.</li>
+                          <li>	Этот день называется Радоницей и считается Пасхой для усопших. В день Радоницы христиане символично разделяют пасхальную радость о воскресении Спасителя с членами Церкви, уже оставившими этот мир.</li>
+                          <li>	Именно на Радоницу существует обычай празднования Пасхи на могилах усопших, куда приносятся крашеные яйца и другие пасхальные яства, где совершается поминальная трапеза и часть приготовленного отдается неимущим на помин души.</li>
+                        </ul>
+
+                        <ul class="text4 push ">
+                          <li>	Отмечается 24 декабря (6 января).</li>
+                          <li>	Коляда — солнце-младенец, в славянской мифологии — воплощение новогоднего цикла, а также персонаж праздников, сходный с Овсенем.
+                          </li>
+                          <li>	Славяне отмечают Коляду, когда день «на воробьиный скок» прибыл, и начинает разгораться зимнее солнце (то есть в период зимнего солнцестояния). Перед празднеством кудесник воет волком (вещий вой), прогоняя злых духов. По окончании зачина всем подносится братина (ковш) с хмельным напитком, и обавник (читающий славления и приговоры на обрядах во время праздников) восклицает: «Овсень, куда едешь? Мосты мостить! Кому ездить? Коляде государю! На чем ему ездить? На солнечной свинке! Чем погонять? Поросенком!»</li>
+
+                        </ul>
+
+
+                        <ul class="text5 push ">
+                          <li>	Отмечается на 50-й день после Пасхи.
+                          </li>
+                          <li>	В православии он относится к числу двунадесятых праздников и прославляет Пресвятую Троицу. А Пятидесятницей он называется потому, что сошествие Святого Духа на Апостолов совершилось в пятидесятый день по Воскресении Христовом.</li>
+                          <li>	В этот праздник в церквях сразу после Божественной литургии совершается вечерня в воспоминание сошествия на святых апостолов Духа Утешителя. Во время этого богослужения читаются коленопреклоненные молитвы о ниспослании и нам Духа Святого, Духа премудрости, Духа разума и страха Божия (молитва коленопреклоненная после сугубой ектении). Православные христиане в этот день украшают дома и храмы зелеными веточками березы, цветами.</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+          <!-- /#page-content-wrapper -->
+              </>
+            </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/4x4_rus.js"></script>
+    <script type="text/javascript">
+    $("#menu-toggle").click(function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("toggled");
+     });
+
+    </script>
+    <script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+    </script>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+    /* set variables locally for increased performance */
+    var scroll_timer;
+    var displayed = false;
+    var $message = $('#message a');
+    var $window = $(window);
+    var top = $(document.body).children(0).position().top;
+    /* react to scroll event on window */
+    $window.scroll(function () {
+    window.clearTimeout(scroll_timer);
+    scroll_timer = window.setTimeout(function () {
+    if ($window.scrollTop() <= top) {
+    displayed = false;
+    $message.fadeOut(500);
+    }
+    else if (displayed == false) {
+    displayed = true;
+    $message.stop(true, true).show().click(function () { $message.fadeOut(500); });
+    }
+    }, 100);
+    });
+    });
+    </script>
+    <style>
+
+    #message a:after{
+    width: 10px;
+    height:10px;
+    content:'';
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    transform: rotate(45deg);
+    position:absolute;
+    top:4px;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    }
+
+    #message a {
+    display: block;
+    display: none;
+    z-index: 999;
+    opacity: .8;
+    position: fixed;
+    bottom: 50px;
+    right:100px;
+    margin-top: -80px;
+    margin-left: -160px;
+    border-radius:50%;
+    line-height: 48px;
+    width: 50px;
+    height:50px;
+    padding: 10px;
+    background-color: #d61a46;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    }
+
+    element.style {
+    display: inline;
+    }
+    </style>
+    <div id="message"><a href="#top"></a></div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+
+    </body>
+    </html>
